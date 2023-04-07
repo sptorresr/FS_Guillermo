@@ -1,0 +1,23 @@
+
+    /*modelo de cajas */
+    body {
+    background: tomato;
+    font-size: 16px;
+    }
+
+    section {
+    background: MediumPurple;
+   }
+
+   div {
+    background: PaleGoldenRod;
+    padding: 16px 32px;
+    margin: 20px;
+    border: 8px solid Orchid;
+   
+   }
+   
+   p {
+    background: PapayaWhip;
+    color: LightGray;
+   } 

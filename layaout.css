@@ -1,0 +1,18 @@
+    /*layaout */
+    
+    main {
+    width: 600px;
+   }
+   
+    div {
+    padding: 20px;
+    border: 1px solid tomato;
+   }
+
+   .column{
+    /*convierte linea en bloque */
+    display: inline-block;
+    /* calcula el ancho para que las tres columnas quepan*/
+    width: calc(33.33% - 40px - 2px);
+   }
+

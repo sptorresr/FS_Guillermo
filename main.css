@@ -1,0 +1,35 @@
+
+   /*combinacion de selectorres */
+   body {
+    background: white;
+    font-size: 16px;
+    }
+
+    section {
+      background: MediumPurple;
+     }
+
+     .abuelo {
+      border: 1px dotted black;
+
+     }
+     /* todo p que atras tenga una p*/
+     p + p {
+      color: tomato;
+     }
+
+     /* todo spam que este en clase hermano - hijo inmediato*/
+     .hermano > span {
+      color: rebeccapurple;
+     }
+
+     /* todo spam que este dentro de un div q*/
+     div span {
+      font-weight: bold;
+     }
+
+     /*todo div que tenga un div */
+     div ~ div {
+      color:teal;
+
+     }
