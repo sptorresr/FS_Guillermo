@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formularios HTML</title>
+    <link rel="stylesheet" href="cssforms.css">
+</head>
+<body>
+    <main class="page">
+        <h1>Contacto</h1>
+        <form action="/server" method="get">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" placeholder="Ingrese su nombre completo" required >
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email"  name="email" type="email" placeholder="Ingrese su correo electronico" required>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                        <input id="10000" name="presupuesto" type="radio" value="10000" ><label for="10000">$10000</label>
+                        <input id="5000" name="presupuesto" type="radio" value="5000" ><label for="5000">$5000</label>
+                        <input id="1000" name="presupuesto" type="radio" value="1000" ><label for="1000">$1000</label>
+                        
+                </fieldset>
+                <div class="help">Este presupuesto es la base no el total</div>
+            </div>
+            <div class="form-group">
+                <label for="tipo">Tipo de Proyecto</label>
+                <select id="tipo" name="tipo">
+                    <option disabled selected value="">Seleccione uno</option>
+                    <option value="PWeb">Sitios Web</option>
+                    <option value="Appweb">Aplicacion Web</option>
+                    <option value="Appmovil">Aplicacion Movil</option>
+                    <option value="Diseno">Diseño</option>
+                </select>
+            </div>
+                <div class="form-group">
+                    <label for="descripcion" required>Descripcion</label>
+                    <textarea id="descripcion" name="descripcion" rows="5" ></textarea>
+                    <div class="help">Escribe una descripcion del proyecto en al menos 300 palabras</div>
+                </div>
+                <div class="form-group">
+                    <label for="terminos">
+                        <input id="terminos" type="checkbox" name="terminos" required>
+                        <span>Acepto los terminos y condiciones</span>
+                    </label>
+
+                </div>
+            <button>Enviar</button>
+        </form>
+    </main>
+    
+</body>
+</html>
