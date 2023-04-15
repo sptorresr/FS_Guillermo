@@ -89,4 +89,12 @@ button:active {
     /* box-shadow: none; quita la sombra para efecto visual de que se hunde*/
     box-shadow: -1px -1px 0   rgba(0,0,0, 0.5);
 }
+form {
+    accent-color:#22c55e ;
+}
+input:focus-visible,
+textarea:focus-visible{
+    border: 1px solid #22c55e ;
+    outline: 2px solid #22c55e;
 
+}
