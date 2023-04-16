@@ -19,53 +19,63 @@ body {
 
 main{
     display: flex;
-    justify-content: space-evenly;
-    gap: 10 px;
-    padding: 200px;
-    margin-top: 200px;
-    border: 10px dashed tomato;
-    position: relative;
+    flex-direction: column;
+   
 
 }
 
-
-
-div{
-    width: 200px;
-    height: 200px;
-    border: 2px solid blueviolet;
-    background: paleturquoise;
+nav {
     display: grid;
     place-items: center;
+    background: #16a085;
+
+
+}
+header {
+    background: #1abc9c;
+}
+
+section, header{
+  
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+  
     
 }
-
-.Static{
-    position: static;/*no tiene ninguna posiscion*/
+.content {
+    background: #bdc3c7;
 }
 
-.Relative{
-    position: relative; /*se mueve con respecto a su elemento anterios*/
-    top: 40px;
-    left: 40px;
-
+.signup {
+    background: #7f8c8d;
 }
+ .feature{
+    background: #c0392b;
+ }
+  .feature-first{
+    background: #e67e22;
 
-.Absolute{
-    position: absolute; /* se posiciona con respecto al elemento superior relativo*/
-    top: 40px;
-    left: 40px;
+  }
+  .feature:last-child{
+    background: #9b59b6;
+  }
 
-}
+  @media  screen and (min-width: 992px) {
+    .features {
+        display: flex;
+        order: 1;
+    }
 
-.Fixed{
-    position: fixed;/*relativa al body siempre*/
-    top: 40px;
-    left: 40px;
-}
+     .feature{
+        width: 100%;
+     }
+     .signup{
+        min-height: auto;
+        height: 100px;
+        order:2;
+     }
 
-.Sticky{
-    position: sticky;/*se queda ahi asi se tenga scroll, el contenedor donde se encuentra*/
-    top: 10px;
-
-}
+  }
