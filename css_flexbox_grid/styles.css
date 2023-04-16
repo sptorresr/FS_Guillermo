@@ -11,26 +11,7 @@ body {
     background: whitesmoke ;
     margin: 0;
 }
-.container {
-    display: flex; /*coloca los div uno al lado del otro asi sea mayor omenor eltamaño*/
-    /*display: inline-flex;coloca los div uno al lado del otro repetando espacio*/
-    flex-wrap: wrap;/*hace que se quiebre es decir repeta tamaño y al llegar al limite, bajan*/
-    /*flex-direction: column; cambia el eje principal a columna.*/
-    /*flex-direction: column-reverse; cambia el orden*/
-    flex-direction: row;
-    /*justify-content: flex-end ; justifica a la derecha */
-    /*justify-content: flex-star ; justifica a la izquierda */
-    /*justify-content: space-between; justifica con un pequeño espacio*/
-    justify-content: center; /*se usa para justificar el eje principal*/
-    align-items: center;/*se usa para justificar el eje secundario o cruzado*/
-    align-content: space-around;
-    /*Salign-content: space-around;para todo el contenido*/
 
-
-    border: 2px dashed rebeccapurple;
-    height: 100%;
-    
-}
 
 
 .item, .grid-item {
@@ -52,9 +33,30 @@ body {
 
 .grid-containner{
     display: grid;
-    grid-template-columns: 40px 50px auto 50px 40px ;
-    grid-template-rows: 25% 100px auto ;
-    height: 100%;
-    border: 2px dashed teal;
+    grid-template-columns: repeat(4,1fr); /*1fr en cuatro partes iguales*/
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header" "main main . sidebar" "footer footer footer footer";
+    height : 100%;
+    border : 2px dashed teal;
 
+
+}
+.item-a{
+    grid-area: header ;
+
+}
+
+.item-b{
+    grid-area: main ;
+    
+}
+
+.item-c{
+    grid-area: sidebar ;
+    
+}
+
+.item-d{
+    grid-area: footer ;
+    
 }
