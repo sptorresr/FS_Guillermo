@@ -1,0 +1,13 @@
+{
+  "hash": "7303e6e8",
+  "browserHash": "f6447221",
+  "optimized": {
+    "bootstrap": {
+      "src": "../../frameworks-ui/bootstrap-setup/node_modules/bootstrap/dist/js/bootstrap.esm.js",
+      "file": "bootstrap.js",
+      "fileHash": "2b2643ad",
+      "needsInterop": false
+    }
+  },
+  "chunks": {}
+}
